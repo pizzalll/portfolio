@@ -1,0 +1,253 @@
+*{margin: 0; padding: 0; box-sizing: border-box; outline: none;}
+ul{list-style-type: none;}
+a{text-decoration: none; color: #444;}
+body{color: black; font-size: 100%; font-family: 'Nanum Gothic', sans-serif;}
+
+/* 라인 */
+.line{
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background: #aaa;
+}
+/* 기본 틀 1200px */
+.container{
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* 헤더 */
+#main_header{
+    height: 100px;
+    text-align: center;
+}
+#main_header h1{
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    overflow: hidden;
+}
+
+
+/* 유틸메뉴 */
+#util_menu{
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    font-size: 24px;
+}
+#util_menu > a{
+    margin-left: 10px;
+}
+
+
+/* 검색창 */
+#search_box{
+    position: relative;
+    width: 540px;
+    height: 45px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    text-align: left;
+    margin-top: 25px;
+}
+#search_box input, #search_box button{
+    font-size: 12px;
+    color: #444;
+    border: none;
+}
+#search_box button{
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+    padding: 5px;
+    background: none;
+    border: none;
+    margin-top: 3px;
+    margin-right: 7px;
+}
+#search_box input{
+    position: relative;
+    top: 2px;
+    left: 3px;
+    width: 470px;
+    padding-top: 13px;
+    padding-left: 10px;
+}
+
+
+
+/* gnb */
+#main_gnb{
+    height: 50px;
+}
+.gnb > li{
+    float: left;
+    width: 11%;
+    padding-left: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.gnb > li a{
+    display: block;
+}
+.gnb > li a:hover{
+    color: black;
+}
+
+
+
+/* 베스트 아이템 */
+#best_item > .container > h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#best_item ul > li{
+    width: 285px;
+    float: left;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+#best_item ul > li:last-child{
+    margin-right: 0;
+}
+#best_item ul > li img{
+    margin-bottom: 1em;
+    display: block;
+}
+#best_item ul > li .title{
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+#best_item ul > li .name{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 0.5em;
+}
+#best_item ul > li .origin_price{
+    font-size: 14px;
+    display: block;
+    color: #999;
+    margin-bottom: 0.5em;
+}
+
+
+/* 뉴 아이템 */
+#new_item{
+    margin-bottom: 80px;
+}
+#new_item > .container > h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#new_item ul > li{
+    width: 285px;
+    float: left;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+#new_item ul > li:last-child{
+    margin-right: 0;
+}
+#new_item ul > li img{
+    margin-bottom: 1em;
+    display: block;
+}
+#new_item ul > li .title{
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+#new_item ul > li .name{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 0.5em;
+}
+#new_item ul > li .origin_price{
+    font-size: 14px;
+    display: block;
+    color: #999;
+    margin-bottom: 0.5em;
+}
+
+
+
+/* 리뷰 */
+#review > .container > h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+/* 푸터 */
+#main_footer > .container > i:first-child{
+    float: left;
+    font-size: 35px;
+    margin-top: 15px;
+}
+#main_footer > .container > .number{
+    float: left;
+    padding-left: 20px;
+    padding-right: 50px;
+    margin-top: 15px;
+}
+#main_footer > .container > p{
+    font-size: 16px;
+    display: inline-block;
+    color: #aaa;
+}
+#main_footer > .container > p:nth-of-type(1){
+    padding-top: 15px;
+}
+#main_footer > .container > i{
+    float: right;
+    font-size: 32px;
+    padding-left: 10px;
+}
+
+
+
+/* 바텀푸터 */
+#main_footer > .container > ul{
+    float: left;
+    margin-left: 50px;
+}
+#main_footer > .container > ul:first-child{
+    margin-left: 0px;
+}
+#main_footer > .container > ul > li{
+    line-height: 50px;
+    font-size: 14px;
+    color: #aaa;
+    font-weight: bold;
+}
+#main_footer > .container > ul > li > a{
+    color: #aaa;
+}
+#main_footer > .container > copyright{
+    float: right;
+    margin-top: 170px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+
+
+/* bxslider */
+.bx-wrapper{
+    border: none !important;
+    box-shadow: none !important;
+}
+.bx-pager{
+    bottom: 20px !important;
+}

@@ -1,0 +1,100 @@
+/* pc */
+.container{
+    max-width: 1200px; /* 가변 최대 1200px */
+    margin: 0 auto;
+}
+
+#main_header > .container{
+    position: relative;
+}
+#main_header > .container > h1{
+    position: absolute;
+    left: 20px; top: 20px;
+}
+#main_header > .container #main_gnb{
+    position: absolute;
+    right: 130px; top: 30px;
+}
+#main_header > .container #main_gnb li{
+    display: inline-block;
+    margin-left: 1em; margin-right: 1em;
+}
+#main_header > .container #util{
+    position: absolute;
+    right: 0; top: 30px;
+}
+#main_header > .container #util li{
+    display: inline-block;
+    margin-left: 1em; margin-right: 1em;
+}
+#main_gnb, #util {font-size: 15px;}
+
+/* gnb hover */
+#main_gnb a:hover, #util a:hover{
+    color: rgba(255,255,255,0.5);
+}
+
+/* 아이콘 비표시 */
+#toggle, #util i.fa-shopping-bag{display: none;}
+
+
+/* 신제품 */
+#new_product{
+
+}
+#new_product .product_list{
+    overflow: hidden;
+}
+#new_product .product_list a img{
+    width: 386px;
+    height: 500px;
+}
+#new_product .product_list a:hover{
+    transition: 0.6s;
+    background: rgb(109, 109, 109);
+}
+#new_product .product_list > li{
+    /* width: 386.66px; */
+    width: 32.33%;
+    float: left;
+    /* margin-right: 20px; */
+    margin-right: 1.5%;
+}
+#new_product .product_list > li:last-child{
+    margin-right: 0;
+}
+#new_product .product_list > li > a{
+    display: block;
+}
+#new_product .product_list > li img{
+    width: 100%;
+}
+#new_product .product_list .title{
+    display: block;
+}
+#new_product .product_list .price{
+    font-weight: bold;
+    color: red;
+    margin-right: 1em;
+}
+#new_product .product_list .origin_price{
+
+}
+
+/* 뉴스섹션 */
+#news > .container{
+    overflow: hidden;
+}
+#news article{
+    width: 49.25%;
+    float: left;
+    margin-right: 1.5%;
+}
+#news article:last-child{
+    margin-right: 0;
+}
+
+/* 푸터 */
+#main_footer{
+    font-size: 13px;
+}

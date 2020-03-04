@@ -1,0 +1,530 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+li{list-style-type: none; padding-top: 15px;}
+body{font-family: 'Noto Sans KR';}
+.second{opacity: .7;}
+#page{position: relative; background: white;}
+
+
+@media screen and (min-width: 769px) {
+    /* 헤더 */
+#main-header{
+    display: block;
+    height: 100vh;
+}
+.main .main-p{
+    text-align: center;
+}
+
+
+/* 자기소개 */
+#intro{
+    display: block;
+    width: 50%;
+    min-height: 80vh;
+    float: left;
+    overflow: hidden;
+    color: white;
+    background-color: #00BFFF;
+    padding: 70px 5vw;
+    /* padding-bottom: 120.5px; */
+    box-sizing: border-box;
+}
+#intro .intro-inner{
+    text-align: right;
+}
+.inner-heading{
+    padding-bottom: 30px;
+}
+.intro-inner .inner-content li{
+    padding-bottom: 30px;
+}
+
+
+/* 기술 */
+#skill{
+    display: block;
+    width: 50%;
+    min-height: 80vh;
+    float: left;
+    overflow: hidden;
+    color: white;
+    background-color: #2ECCFA;
+    padding: 70px 5vw;
+    box-sizing: border-box;
+}
+#skill .skill-inner{
+    text-align: left;
+}
+
+
+/* 작업물 */
+#work{
+    display: block;
+    margin-top: 50em;
+    background: white;
+}
+#work::after{
+    background: #2ECCFA;
+    border-radius: 1.5px;
+    display: block;
+    width: 150px;
+    height: 2px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.work-inner{
+    text-align: center;
+}
+.work-inner .inner-heading{
+    padding-bottom: 50px;
+}
+
+.work-inner .inner-heading h1::after{
+    background: #2ECCFA;
+    border-radius: 1.5px;
+    display: block;
+    width: 50px;
+    height: 2px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.work-image{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.work-image img{
+    width: 40vw;
+}
+.work-ex{
+    width: 80vw;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.ex-heading{
+    text-align: center;
+}
+.work-ex .point{
+    font-size: 2.5em;
+    padding-right: 15px;
+    color: #2ECCFA;
+}
+.work-ex .ex-heading h3{
+    display:inline-block;
+    padding-bottom: 50px;
+}
+.work-ex .ex-add p{
+    padding: 15px 0;
+}
+.ex-content table{
+    padding-bottom: 20px;
+}
+.ex-content table td{
+    padding-right: 50px;
+    line-height: 35px;
+}
+.ex-content table td a{
+    color: gray;
+}
+
+
+/* 푸터 */
+.view{
+    height: 400px;
+    z-index: -999999;
+}
+#main-footer{
+    position: fixed;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    background: #5d615e;
+}
+#main-footer .use, #main-footer .contact{
+    /* width: 50%; */
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    padding: 100px 15vw;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+#main-footer .contact{
+    padding-right: 1vw;
+}
+#main-footer .use{
+    padding-left: 10vw;
+}
+#main-footer .use .left{
+    color: white;
+    padding-right: 10px;
+}
+#main-footer a{
+    color: white;
+}
+
+
+/* 버튼 */
+.top-button a{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 3px 3px 8px;
+    color: black;
+    opacity: 0.6;
+    text-align: center;
+    line-height: 45px;
+}
+}
+
+@media screen and (max-width: 768px) and (min-width: 415px) {
+    body{font-size: 1em;}
+
+    /* 헤더 */
+#main-header{
+    display: block;
+}
+.main .main-p{
+    text-align: center;
+}
+
+
+/* 자기소개 */
+#intro{
+    display: block;
+    width: 100%;
+    min-height: 50vh;
+    /* float: left; */
+    color: white;
+    background-color: #00BFFF;
+    padding: 70px 5vw;
+    padding-bottom: 120.5px;
+    box-sizing: border-box;
+}
+#intro .intro-inner{
+    text-align: center;
+}
+.inner-heading{
+    padding-bottom: 30px;
+}
+.intro-inner .inner-content li{
+    padding-bottom: 30px;
+}
+
+/* 기술 */
+#skill{
+    display: block;
+    width: 100%;
+    min-height: 50vh;
+    color: white;
+    background-color: #2ECCFA;
+    padding: 70px 5vw;
+    box-sizing: border-box;
+}
+#skill .skill-inner{
+    text-align: center;
+}
+
+
+/* 작업물 */
+#work{
+    display: block;
+    margin-top: 10em;
+    background: white;
+}
+#work::after{
+    background: #2ECCFA;
+    border-radius: 1.5px;
+    display: block;
+    width: 150px;
+    height: 2px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.work-inner{
+    text-align: center;
+}
+.work-inner .inner-heading{
+    padding-bottom: 50px;
+}
+
+.work-inner .inner-heading h1::after{
+    background: #2ECCFA;
+    border-radius: 1.5px;
+    display: block;
+    width: 50px;
+    height: 2px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.work-image{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.work-image img{
+    width: 40vw;
+}
+.work-ex{
+    width: 80vw;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.ex-heading{
+    text-align: center;
+}
+.work-ex .point{
+    font-size: 2.5em;
+    padding-right: 15px;
+    color: #2ECCFA;
+}
+.work-ex .ex-heading h3{
+    display:inline-block;
+    padding-bottom: 50px;
+}
+.work-ex .ex-add p{
+    padding: 15px 0;
+}
+.ex-content table{
+    padding-bottom: 20px;
+}
+.ex-content table td{
+    padding-right: 50px;
+    line-height: 35px;
+}
+
+
+/* 푸터 */
+.view{
+    height: 400px;
+}
+#main-footer{
+    position: fixed;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    z-index: -9999;
+    background: #5d615e;
+}
+#main-footer .use, #main-footer .contact{
+    /* width: 50%; */
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    padding: 100px 10vw;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+#main-footer .contact{
+    padding-right: 1vw;
+}
+#main-footer .use{
+    padding-left: 10vw;
+}
+#main-footer .use .left{
+    color: white;
+    padding-right: 10px;
+}
+#main-footer a{
+    color: white;
+}
+
+
+/* 버튼 */
+.top-button a{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 35px;
+    box-shadow: 3px 3px 8px;
+    color: black;
+    opacity: 0.6;
+    text-align: center;
+    line-height: 30px;
+}
+}
+
+@media screen and (max-width: 414px) {
+body{font-size: 0.7em;}
+        /* 헤더 */
+#main-header{
+    display: block;
+}
+.main .main-p{
+    text-align: center;
+}
+
+
+/* 자기소개 */
+#intro{
+    display: block;
+    width: 100%;
+    min-height: 80vh;
+    /* float: left; */
+    color: white;
+    background-color: #00BFFF;
+    padding: 70px 5vw;
+    padding-bottom: 120.5px;
+    box-sizing: border-box;
+}
+#intro .intro-inner{
+    text-align: center;
+}
+.inner-heading{
+    padding-bottom: 30px;
+}
+.intro-inner .inner-content li{
+    padding-bottom: 30px;
+}
+
+
+/* 기술 */
+#skill{
+    display: block;
+    width: 100%;
+    min-height: 80vh;
+    color: white;
+    background-color: #2ECCFA;
+    padding: 70px 5vw;
+    box-sizing: border-box;
+}
+#skill .skill-inner{
+    text-align: center;
+}
+
+
+/* 작업물 */
+#work{
+    display: block;
+    margin-top: 10em;
+    background: white;
+}
+#work::after{
+    background: #2ECCFA;
+    border-radius: 1.5px;
+    display: block;
+    width: 150px;
+    height: 2px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.work-inner{
+    text-align: center;
+}
+.work-inner .inner-heading{
+    padding-bottom: 50px;
+}
+
+.work-inner .inner-heading h1::after{
+    background: #2ECCFA;
+    border-radius: 1.5px;
+    display: block;
+    width: 50px;
+    height: 2px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.work-image{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.work-image img{
+    width: 40vw;
+}
+.work-ex{
+    width: 80vw;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.ex-heading{
+    text-align: center;
+}
+.work-ex .point{
+    font-size: 2.5em;
+    padding-right: 15px;
+    color: #2ECCFA;
+}
+.work-ex .ex-heading h3{
+    display:inline-block;
+    padding-bottom: 50px;
+}
+.work-ex .ex-add p{
+    padding: 15px 0;
+}
+.ex-content table{
+    padding-bottom: 20px;
+}
+.ex-content table td{
+    padding-right: 50px;
+    line-height: 35px;
+}
+
+
+/* 푸터 */
+.view{
+    height: 400px;
+}
+#main-footer{
+    position: fixed;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    z-index: -9999;
+    background: #5d615e;
+}
+#main-footer .use, #main-footer .contact{
+    /* width: 50%; */
+    height: 250px;
+    float: left;
+    overflow: hidden;
+    padding: 100px 5vw;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+#main-footer .contact{
+    padding-right: 1vw;
+}
+#main-footer .use{
+    padding-left: 10vw;
+}
+#main-footer .use .left{
+    color: white;
+    padding-right: 10px;
+}
+#main-footer a{
+    color: white;
+}
+
+
+/* 버튼 */
+.top-button a{
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 3px 3px 8px;
+    color: black;
+    opacity: 0.6;
+    text-align: center;
+    line-height: 30px;
+}
+}
