@@ -15,11 +15,11 @@ body{font-family: 'Noto Sans KR';}
 }
 .main .main-p{
     padding-top: 30px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     opacity: 0.4;
 }
 .main img{
-    width: 50vw;
+    width: 35vw;
     padding-bottom: 130px;
 }
 
@@ -386,12 +386,12 @@ body{font-size: 0.7em;}
 }
 .main .main-p{
     padding-top: 30px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     opacity: 0.4;
 }
 .main img{
-    width: 50vw;
-    padding-bottom: 130px;
+    width: 15vw;
+    padding-bottom: 50px;
 }
 .main h2{
     font-size: 10px;
